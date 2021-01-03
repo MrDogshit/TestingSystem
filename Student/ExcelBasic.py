@@ -36,7 +36,7 @@ class ExcelBasic(classmethod):
     def DropData(self, *args, axis=0):
         """
         :param args:
-        :param axis: 0:删除行  1:删除列
+        :param axis: 0:删除行  1:删除列 , 会导致数据上移或左移
         :return:
         """
         self.data.drop(*args, axis=axis)
